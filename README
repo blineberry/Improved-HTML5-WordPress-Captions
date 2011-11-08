@@ -1,1 +1,8 @@
-Hello World
+Improved HTML5 WordPress Captions
+
+Improved HTML5 WordPress Captions make two adjustments to the default WordPress caption output:
+
+1. strips the added 10px width from .wp-caption
+2. changes from a div/p structure to figure/figcaption structure
+
+It can be installed as a plugin.
