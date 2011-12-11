@@ -2,7 +2,7 @@
 /*
 Plugin Name: Improved HTML5 Caption
 Description: Removes inline styling from wp-caption and changes to HTML5 figure/figcaption 
-Version: 2.0
+Version: 2.0.1
 Author: Brent Lineberry
 Author URI: http://www.orangegnome.com/
 */
@@ -42,7 +42,7 @@ function orangegnome_img_caption_shortcode_filter($val, $attr, $content = null)
 	if ( 1 > (int) $width || empty($caption) )
 		return $val;
 
-	return '<figure ' . $id . 'class="wp-caption ' . esc_attr($align) . '" style="width: ' . $width . 'px;">'
+	return '<figure id="' . $id . '" class="wp-caption ' . esc_attr($align) . '" style="width: ' . $width . 'px;">'
 	. do_shortcode( $content ) . '<figcaption class="wp-caption-text">' . $caption . '</figcaption></figure>';
 }
 ?>
